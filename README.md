@@ -32,7 +32,6 @@ Data + AI at **Alibaba Cloud**. I work on **Ray** — large-scale heterogeneous 
 | :--- | :--- |
 | [**ray-project/ray**](https://github.com/ray-project/ray) | Distributed AI compute engine — core runtime & Ray Data |
 | [**aliyun/alibabacloud-odps-maxframe-client**](https://github.com/aliyun/alibabacloud-odps-maxframe-client) | Distributed pandas & Python compute framework on Alibaba Cloud MaxCompute (ODPS) |
-| [**huangcarry/velastest**](https://github.com/huangcarry/velastest) | Lance & multimodal data pipeline snippets — CSV/JSON to Lance, image resampling, vision & T2I |
 
 ### Activity
 
