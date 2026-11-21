@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-label="huangcarry — Data + AI @ Alibaba Cloud">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <!-- Ambient glow -->
+    <radialGradient id="glow-cyan-light" cx="78%" cy="45%" r="44%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.09"/>
+      <stop offset="55%" stop-color="#4F46E5" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-orange-light" cx="12%" cy="18%" r="32%">
+      <stop offset="0%" stop-color="#EA580C" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Accent gradient -->
+    <linearGradient id="accent-line-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid-light" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.85" fill="#CBD5E1" fill-opacity="0.7"/>
+    </pattern>
+
+    <!-- Clip rounded card -->
+    <clipPath id="card-clip-light">
+      <rect x="0.5" y="0.5" width="899" height="219" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    @keyframes flowDash {
+      to { stroke-dashoffset: -28; }
+    }
+    @keyframes flowDashRev {
+      to { stroke-dashoffset: 28; }
+    }
+    @keyframes nodeGlow {
+      0%, 100% { stroke-opacity: 1; }
+      50% { stroke-opacity: 0.45; }
+    }
+    .pulse { animation: pulseDot 2.4s ease-in-out infinite; }
+    .flow { stroke-dasharray: 4 10; animation: flowDash 2.2s linear infinite; }
+    .flow-slow { stroke-dasharray: 4 10; animation: flowDash 3.1s linear infinite; }
+    .flow-rev { stroke-dasharray: 3 11; animation: flowDashRev 2.8s linear infinite; }
+    .head-ring { animation: nodeGlow 3s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#card-clip-light)">
+    <!-- Base canvas -->
+    <rect width="900" height="220" fill="url(#bg-light)"/>
+    <rect width="900" height="220" fill="url(#grid-light)"/>
+    <rect width="900" height="220" fill="url(#glow-cyan-light)"/>
+    <rect width="900" height="220" fill="url(#glow-orange-light)"/>
+
+    <!-- Top subtle accent bar -->
+    <rect x="0" y="0" width="900" height="2.5" fill="url(#accent-line-light)"/>
+
+    <!-- Left Content -->
+    <!-- Status pill -->
+    <g transform="translate(42, 36)">
+      <rect x="0" y="0" width="218" height="24" rx="12" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1"/>
+      <circle cx="14" cy="12" r="3.5" fill="#1A7F37" class="pulse"/>
+      <text x="26" y="15.5" fill="#24292F" font-size="10.5" font-weight="600" letter-spacing="0.8" class="font-mono">ALIBABA CLOUD · DATA + AI</text>
+    </g>
+
+    <!-- Handle / Name -->
+    <text x="42" y="108" fill="#0F172A" font-size="40" font-weight="700" letter-spacing="-0.8" class="font-sans">huangcarry</text>
+
+    <!-- Subtitle -->
+    <text x="42" y="138" fill="#475569" font-size="15" font-weight="400" class="font-sans">
+      Ray Distributed Runtime · Heterogeneous Clusters · Data at Scale
+    </text>
+
+    <!-- Terminal line -->
+    <g transform="translate(42, 162)">
+      <rect x="0" y="0" width="424" height="30" rx="6" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1"/>
+      <text x="12" y="19" fill="#0284C7" font-size="11.5" font-weight="700" class="font-mono">$</text>
+      <text x="26" y="19" fill="#0F172A" font-size="11.5" font-weight="600" class="font-mono">ray status</text>
+      <text x="102" y="19" fill="#57606A" font-size="11.5" class="font-mono">--cluster=heterogeneous --pipeline=data+ai</text>
+      <rect x="404" y="9" width="7" height="12" rx="1" fill="#0284C7" class="pulse"/>
+    </g>
+
+    <!-- Right Architectural Topology Diagram -->
+    <g transform="translate(555, 22)">
+      <!-- Subtle topology frame -->
+      <rect x="0" y="0" width="308" height="176" rx="10" fill="#FFFFFF" fill-opacity="0.85" stroke="#D0D7DE" stroke-width="1"/>
+      <text x="14" y="18" fill="#64748B" font-size="9.5" letter-spacing="0.9" class="font-mono">CLUSTER TOPOLOGY // RAY RUNTIME</text>
+
+      <!-- Static edges -->
+      <g stroke="#CBD5E1" stroke-width="1.4" fill="none">
+        <path d="M 88 88 C 122 88, 128 48, 162 48"/>
+        <path d="M 88 88 L 162 88"/>
+        <path d="M 88 88 C 122 88, 128 128, 162 128"/>
+        <path d="M 220 48 C 242 48, 242 74, 256 74"/>
+        <path d="M 220 88 L 256 88"/>
+        <path d="M 220 128 C 242 128, 242 102, 256 102"/>
+      </g>
+
+      <!-- Animated data flow pulses -->
+      <g fill="none" stroke-width="1.6" stroke-linecap="round">
+        <path d="M 88 88 C 122 88, 128 48, 162 48" stroke="#0284C7" class="flow"/>
+        <path d="M 88 88 L 162 88" stroke="#4F46E5" class="flow-slow"/>
+        <path d="M 88 88 C 122 88, 128 128, 162 128" stroke="#059669" class="flow"/>
+        <path d="M 220 48 C 242 48, 242 74, 256 74" stroke="#0284C7" class="flow-rev"/>
+        <path d="M 220 128 C 242 128, 242 102, 256 102" stroke="#EA580C" class="flow-slow"/>
+      </g>
+
+      <!-- Head Node -->
+      <g transform="translate(18, 64)">
+        <rect x="0" y="0" width="70" height="48" rx="8" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.3" class="head-ring"/>
+        <text x="35" y="21" text-anchor="middle" fill="#0369A1" font-size="10.5" font-weight="700" class="font-mono">RAY HEAD</text>
+        <text x="35" y="36" text-anchor="middle" fill="#64748B" font-size="8.5" class="font-mono">Scheduler</text>
+      </g>
+
+      <!-- Heterogeneous Worker Pool -->
+      <!-- GPU Node -->
+      <g transform="translate(162, 34)">
+        <rect x="0" y="0" width="58" height="28" rx="6" fill="#F8FAFC" stroke="#0284C7" stroke-opacity="0.55" stroke-width="1"/>
+        <circle cx="11" cy="14" r="2.5" fill="#0284C7"/>
+        <text x="20" y="17.5" fill="#0F172A" font-size="9.5" font-weight="600" class="font-mono">GPU</text>
+      </g>
+      <!-- CPU / Ray Data Node -->
+      <g transform="translate(162, 74)">
+        <rect x="0" y="0" width="58" height="28" rx="6" fill="#F8FAFC" stroke="#4F46E5" stroke-opacity="0.55" stroke-width="1"/>
+        <circle cx="11" cy="14" r="2.5" fill="#4F46E5"/>
+        <text x="20" y="17.5" fill="#0F172A" font-size="9.5" font-weight="600" class="font-mono">DATA</text>
+      </g>
+      <!-- K8s / Mixed Pool Node -->
+      <g transform="translate(162, 114)">
+        <rect x="0" y="0" width="58" height="28" rx="6" fill="#F8FAFC" stroke="#059669" stroke-opacity="0.55" stroke-width="1"/>
+        <circle cx="11" cy="14" r="2.5" fill="#059669"/>
+        <text x="20" y="17.5" fill="#0F172A" font-size="9.5" font-weight="600" class="font-mono">K8S</text>
+      </g>
+
+      <!-- Storage / Format Sink -->
+      <g transform="translate(256, 62)">
+        <rect x="0" y="0" width="40" height="52" rx="6" fill="#FFF7ED" stroke="#EA580C" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="20" y="21" text-anchor="middle" fill="#C2410C" font-size="8.5" font-weight="700" class="font-mono">I/O</text>
+        <text x="20" y="34" text-anchor="middle" fill="#64748B" font-size="7.5" class="font-mono">Lance</text>
+        <text x="20" y="44" text-anchor="middle" fill="#64748B" font-size="7.5" class="font-mono">ODPS</text>
+      </g>
+
+      <!-- Bottom metrics bar inside topology -->
+      <line x1="14" y1="154" x2="294" y2="154" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="14" y="168" fill="#64748B" font-size="8.5" class="font-mono">OBJECT STORE: OK</text>
+      <text x="132" y="168" fill="#64748B" font-size="8.5" class="font-mono">TRANSPORT: RDMA/TCP</text>
+      <circle cx="288" cy="165" r="2.5" fill="#1A7F37" class="pulse"/>
+    </g>
+  </g>
+
+  <!-- Crisp Outer Border -->
+  <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#D0D7DE" stroke-width="1"/>
+</svg>
